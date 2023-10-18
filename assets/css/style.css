@@ -210,6 +210,15 @@ hr {
 
 /* media quary , tablet screens and larger */
 
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+/* media quary , tablet screens and larger */
+
 @media screen and (min-width: 768px) {
     /*header*/
     nav {
@@ -263,6 +272,11 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+
+    /*Gallery*/
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* large device (992px and up*/
@@ -270,6 +284,11 @@ hr {
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom:1px solid #3a3a3a;
+    }
+
+    /*Gallery*/
+    #photos {
+        column-count: 4;
     }
 
 }
